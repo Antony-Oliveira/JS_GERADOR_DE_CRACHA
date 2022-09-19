@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/scripts/imports/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/scripts/imports/jquery/jquery.mask.js"></script>
+    <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/imports/alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="../cracha_gerador/src/scripts/imports/alertify/css/alertify.css">
+    <link rel="stylesheet" href="../cracha_gerador//src/scripts/imports/alertify/css/themes/bootstrap.css">
+<script src="../cracha_gerador/src/scripts/imports/bootstrap/js/bootstrap.min.js"></script>
+<script src="../cracha_gerador/src/scripts/imports/bootstrap/js/bootstrap.bundle.js"></script>
+<link rel="stylesheet" href="../cracha_gerador/src/scripts/imports/bootstrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../cracha_gerador/src/images/logosoft.png" type="image/x-icon">
+    <link rel="stylesheet" href="../cracha_gerador/src/styles/CSS.css">
+    <title>Criação do crachá</title>
+</head>
+<body>
+
+    <div id="container" class="">
+        <main id="formulario" class="center-container shadow-lg p-4 ff" >
+            <form action="leituras/leituraLogin.php" method="post" id="form" name="form" class="floating">
+                <div class="d-flex justify-content-center mb-4">
+                    <img class="img-fluid" src="../cracha_gerador/src/images/logosoft.png" alt="" width="72"  style="border-radius: 10px;"/>
+                </div>
+
+                <h2 class="text-center mb-3">Cadastro</h2>
+                <div id="input" class="form-floating mb-3">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome" autocomplete="off" class="form-control input" > 
+                    <label for="nome" class="form-label">Nome</label>
+                    <i><img src="../cracha_gerador/src/images/error-icon.svg" class="off" alt="" id="iN" class="img-fluid"></img></i>
+                    <small id="helpN" class="off fst-italic">a</small>
+                </div>
+
+                <div id="input" class="form-floating mb-3">
+                    <input type="text" name="cpf" id="cpf" placeholder="cpf" autocomplete="off"  class="form-control input" >
+                    <label for="cpf" class="form-label">CPF</label>
+                    <i><img src="../cracha_gerador/src/images/error-icon.svg" class="off" alt="" id="iC" class="img-fluid"></img></i>
+                    <small id="helpC" class="off fst-italic">a</small>
+                </div>
+
+                <div id="input" class="form-floating mb-3">
+                    <input type="text" name="nasc" id="nasc" placeholder="Data de Nascimento" autocomplete="off"  class="form-control input">
+                    <label for="nasc" class="form-label">Data de Nascimento</label>
+                    <i><img src="../cracha_gerador/src/images/error-icon.svg" class="off" alt="" id="iD" class="img-fluid"></img></i>
+                    <small id="helpD" class="off fst-italic">Erro</small>
+                </div>
+
+                <select class="form-select form-select mb-3" aria-label=".form-select-sm example"  id="func">
+                    <option selected disabled value="">Função na empresa</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                  </select>                  
+
+                <div id="input" class="form-floating mb-3">
+                    <input type="text" name="pass" id="pass" placeholder="Senha*" autocomplete="off"  class="form-control input">
+                    <label for="pass" class="form-label">Senha*</label>
+                    <i><img src="../cracha_gerador/src/images/error-icon.svg" class="off" alt="" id="iS" class="img-fluid"></img></i>
+                    <small id="helpS" class="off fst-italic">a</small>
+                </div>
+
+                <div class="d-flex justify-content-center" role="group">
+                    <button type="submit" name="enviar" class="btn btn-success bt" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." >Gerar crachá</button>
+                    <!-- USA BUTTON QUE FICA MELHOR, É O MAIS "CORRETO" E FUNCIONA DO MSM JEITO ; <input type="submit" name="enviar" id="enviar">-->
+                </div>
+            </form>
+        </main>
+
+
+        <div id="cracha" class="off shadow-lg center-container p-5">
+
+            <div id="tubo" class="shadow-lg">.</div>
+
+            <div class="" id="dNome">
+                <input class="form-control text-center"  id="cNome" disabled></input>
+            </div>
+            <div class="" id="dCpf">
+                <input class="form-control text-center" id="cCpf" disabled></input>
+            </div>
+            <div class="border-p" id="dNasc">
+                <input class="form-control text-center disabled" id="cNasc" disabled>.</input>
+            </div>
+            <div id="dFunc">
+                <i><img class="" alt="" src="" id="funcImg"></img></i>
+                <select class="form-control form-select" id="cFunc" disabled>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                </select>
+            </div>
+            <div id="sep"></div>
+        </div>
+
+        <button type="button" id="back" class="btn btn-secondary position-relative off">Voltar</button>
+
+    </div>
+</body> 
+</html>

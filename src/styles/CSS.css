@@ -1,0 +1,207 @@
+body {
+    font-family:'Poppins', sans-serif;
+    /* background-color:  SandyBrown ; */
+    background: linear-gradient(45deg, rgb(22, 227, 159), rgb(12, 221, 221));
+    
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.center-container{
+    height: auto;
+    width: auto;
+    background: white;
+}
+
+
+
+#formulario {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+.input {
+    border-radius: 10px;
+    width: 100%;
+    height: 10%;
+}
+
+.bt {
+    background: linear-gradient(-45deg, darkcyan, mediumturquoise);
+    border: none;
+}
+
+
+
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(2.5rem + 1px);
+  line-height: 1;
+}
+
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
+}
+
+.ff {
+    width: 25%;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+}
+
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+#cracha p {
+    border-radius: 8px;
+    border: 1px solid blue;
+    border-color: black;
+    width: 100%;
+    
+}
+
+#input img {
+    position: absolute;
+    left: 90%;
+    top: 1.7vh;
+}
+
+#input small {
+    color: red;
+    margin-left: 1%;
+    top: 10px;
+}
+
+@keyframes form-cracha {
+    0% {left: 0px; opacity: 0.8;}
+    25% { left: 70px; opacity: 0.6;}
+    35% { left: 75px; opacity: 0.5;}
+    50% { left: 80px; opacity: 0.4;}
+    65% { left: 85px; opacity: 0.3;}
+    75% { left: 90px; opacity: 0.2;}
+    85% { left: 95px; opacity: 0.1;}
+    100% { left: 100px; opacity: 0;}
+}
+
+#cracha {
+    border-radius: 10px;
+    position: absolute;
+    width: 25%;
+    background-color: rgb(249, 246, 246);
+}
+
+#cracha input#cNome, input#cCpf, input#cNasc, input#cFunc {
+    font-size: 18px;
+    margin-bottom: 15%;
+    padding: 5px;
+    border: none;
+}
+
+#cracha input:focus, select:focus {
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+#cracha input::selection, select::selection {
+    background-color: #e9ecef;
+}
+
+#cracha select {
+    text-align: center;
+}
+
+.popup {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+#tubo {
+    width: 40%;
+    height: 20px;
+    color: #6cecf8;
+    display: block;
+    background-color: #6cecf8;
+    margin-left: 30%;
+    border-radius: 10px;
+    top: -2rem;
+    position: relative;
+}
+
+#sep {
+    width: 139.4%;
+    height: 20px;
+    bottom: -3rem;
+    left: -3rem;
+    color: #6cecf8;
+    display: block;
+    background-color: #6cecf8;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+
+}
+
+#funcImg {
+    width: 12%;
+    position: relative;
+    top: 34px;
+    right: -200px;
+    background-color: #e9ecef;
+}
+
+
+#back {
+    position: relative;
+    top: 40%;
+}
+
+#inst {
+}
+
+.form-select {
+    text-align: "";
+}
+
+select.form-select {
+    -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+}
